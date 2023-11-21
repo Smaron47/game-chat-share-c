@@ -1,0 +1,7 @@
+step 1: read a folder then read all the files and then add them with folder path
+step 2: turn them in gray then remove the back ground to take the best result first filter the back ground then take the most blocked part( in  numpy matrix  to avoid the noise. 
+step 3: then start the main process. first the previous matrix check the first photo and a batch of photos like 10 photos. then compare them with the previous matrix. then add  or update the new matched matrix to get more accurate matrix data of image or finding objects.
+step 4: now take rest images then compare them with the new matrix of step 3. now create a list of arrays of those images which is unmatched with the step 3 new matrix. also cut the most matched part form unmatched. please do not change any matrix position.
+step 5: now increase or dicrease the matrix value in some order not fully with the unmatched data. now do this step few time and learn a around value or range of value to detect the object more accurately. oh forgot to tell if noise adjustment matched some unmatched data or get 90% match then remove the data from unmatched and add that new trained matrix to the trained. 
+step 6: if still there some unmatched data then add that to the learned list. now compare with random 10 images then compare with learned data. if 10 images match each at last 85% then count 1 and make that as 100% accurate data. if you get 100% accurate 5 times then break. 
+step 7(need your help): now save the data in some model to use those matrix to compare and predict next time with same kind of images.
